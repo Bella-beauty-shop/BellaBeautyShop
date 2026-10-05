@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produit — Bella Beauty Shop</title>
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Bella Beauty Shop" class="brand__logo" />
+        <span class="brand__text">
+          <span class="brand__name">Bella Beauty Shop</span>
+          <span class="brand__tagline">Sentez la différence</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" data-main-nav>
+        <a href="index.html">Accueil</a>
+        <a href="index.html#perruques">Perruques</a>
+        <a href="index.html#vetements">Vêtements</a>
+        <a href="index.html#bazar">Bazar</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn--berry">Commander</a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main data-product-detail>
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span>/</span>
+        <a href="index.html" data-crumb-category>Catégorie</a>
+        <span>/</span>
+        <span class="is-current" data-crumb-title>Produit</span>
+      </nav>
+    </div>
+
+    <section class="product-detail">
+      <div class="container product-detail__grid">
+        <div class="product-detail__gallery">
+          <div data-gallery></div>
+          <div class="product-detail__thumbs" data-thumbs></div>
+        </div>
+
+        <div class="product-detail__info">
+          <span class="eyebrow" data-eyebrow>Catégorie</span>
+          <h1 data-title>Nom du produit</h1>
+          <p class="product-detail__lead" data-lead>Lorem ipsum dolor sit amet.</p>
+
+          <div class="product-detail__cta">
+            <a href="contact.html" class="btn btn--berry" data-cta-contact>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.02 2c-5.5 0-9.98 4.48-9.98 9.98 0 1.76.46 3.47 1.34 4.98L2 22l5.2-1.36a9.94 9.94 0 0 0 4.82 1.23h.01c5.5 0 9.98-4.48 9.98-9.98S17.52 2 12.02 2zm5.85 14.13c-.25.7-1.25 1.29-1.98 1.44-.53.11-1.22.2-3.55-.76-2.98-1.23-4.9-4.24-5.05-4.44-.15-.2-1.2-1.6-1.2-3.05 0-1.45.75-2.16 1.02-2.45.25-.29.55-.36.73-.36.18 0 .37.002.53.01.17.008.4-.065.62.47.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.32.4-.45.53-.15.15-.31.32-.13.62.18.3.8 1.32 1.72 2.14 1.18 1.06 2.18 1.39 2.48 1.55.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.65-.15.27.1 1.7.8 1.99.95.28.15.47.22.54.34.07.13.07.72-.18 1.42z"/></svg>
+              Commander via WhatsApp
+            </a>
+          </div>
+          <p class="product-detail__note">
+            <strong>Comment ça marche ?</strong> Cliquez sur « Commander », le formulaire
+            se pré-remplit avec ce produit : il ne vous reste qu'à confirmer vos
+            coordonnées pour être mis en relation avec nous sur WhatsApp.
+          </p>
+
+          <ul class="specs-list" data-specs></ul>
+        </div>
+      </div>
+
+      <div class="container product-detail__description">
+        <div class="divider divider--tight" style="margin: 0 0 30px;"><span class="divider__dot"></span></div>
+        <h2>Description</h2>
+        <div data-description></div>
+      </div>
+    </section>
+
+    <section class="related-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Vous aimerez aussi</span>
+          <h2>Dans la même catégorie</h2>
+          <div class="divider divider--tight"><span class="divider__dot"></span></div>
+        </div>
+        <div class="product-grid" data-related-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Bella Beauty Shop" />
+            <div>
+              <div class="footer-brand__name">Bella Beauty Shop</div>
+              <div class="footer-brand__tagline">Sentez la différence</div>
+            </div>
+          </div>
+          <p style="color:#c9bdaf; font-size:0.9rem; max-width:32ch;">
+            Perruques, vêtements et bazar pour la femme moderne.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Boutique</h4>
+          <ul>
+            <li><a href="index.html#perruques">Perruques</a></li>
+            <li><a href="index.html#vetements">Vêtements</a></li>
+            <li><a href="index.html#bazar">Bazar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Aide</h4>
+          <ul>
+            <li><a href="contact.html">Passer commande</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Suivez-nous</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/bellabeautyshop7/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/1KW7x2CaMJ/" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://wa.me/2250707420556" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Bella Beauty Shop. Tous droits réservés.</span>
+        <span>Site vitrine</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

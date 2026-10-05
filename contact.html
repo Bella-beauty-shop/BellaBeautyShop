@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Passer commande — Bella Beauty Shop</title>
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Bella Beauty Shop" class="brand__logo" />
+        <span class="brand__text">
+          <span class="brand__name">Bella Beauty Shop</span>
+          <span class="brand__tagline">Sentez la différence</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" data-main-nav>
+        <a href="index.html">Accueil</a>
+        <a href="index.html#perruques">Perruques</a>
+        <a href="index.html#vetements">Vêtements</a>
+        <a href="index.html#bazar">Bazar</a>
+        <a href="contact.html" class="is-active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn--berry">Commander</a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="container">
+        <span class="eyebrow">Passer commande</span>
+        <h1>Finalisons votre commande sur WhatsApp</h1>
+        <p>
+          Remplissez ce court formulaire : il ouvrira automatiquement une
+          conversation WhatsApp avec votre demande déjà rédigée. Il ne vous
+          restera qu'à l'envoyer, nous prenons le relais.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container contact-layout">
+        <aside class="contact-info">
+          <h3>Une commande, ça se passe comme ça</h3>
+          <p>Nous ne vendons pas directement en ligne : chaque commande est confirmée avec vous, personnellement, sur WhatsApp.</p>
+          <ul class="contact-info__list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+              <span>Renseignez vos coordonnées et le produit souhaité</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>Le message part directement sur WhatsApp</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              <span>Nos conseillères vous répondent sous 24h</span>
+            </li>
+          </ul>
+        </aside>
+
+        <form class="contact-form" data-contact-form>
+          <div class="selected-product" data-selected-product></div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nom">Nom complet <span class="required">*</span></label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <label for="telephone">Téléphone / WhatsApp <span class="required">*</span></label>
+              <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="produit">Produit souhaité</label>
+              <select id="produit" name="produit"></select>
+            </div>
+            <div class="form-group">
+              <label for="quantite">Quantité</label>
+              <input type="number" id="quantite" name="quantite" min="1" value="1" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" placeholder="Précisez la couleur, la taille, une question..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--berry btn--block">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.02 2c-5.5 0-9.98 4.48-9.98 9.98 0 1.76.46 3.47 1.34 4.98L2 22l5.2-1.36a9.94 9.94 0 0 0 4.82 1.23h.01c5.5 0 9.98-4.48 9.98-9.98S17.52 2 12.02 2zm5.85 14.13c-.25.7-1.25 1.29-1.98 1.44-.53.11-1.22.2-3.55-.76-2.98-1.23-4.9-4.24-5.05-4.44-.15-.2-1.2-1.6-1.2-3.05 0-1.45.75-2.16 1.02-2.45.25-.29.55-.36.73-.36.18 0 .37.002.53.01.17.008.4-.065.62.47.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.32.4-.45.53-.15.15-.31.32-.13.62.18.3.8 1.32 1.72 2.14 1.18 1.06 2.18 1.39 2.48 1.55.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.65-.15.27.1 1.7.8 1.99.95.28.15.47.22.54.34.07.13.07.72-.18 1.42z"/></svg>
+            Envoyer la commande via WhatsApp
+          </button>
+          <p class="form-note">En envoyant ce formulaire, vous serez redirigée vers WhatsApp pour confirmer votre demande.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Bella Beauty Shop" />
+            <div>
+              <div class="footer-brand__name">Bella Beauty Shop</div>
+              <div class="footer-brand__tagline">Sentez la différence</div>
+            </div>
+          </div>
+          <p style="color:#c9bdaf; font-size:0.9rem; max-width:32ch;">
+            Perruques, vêtements et bazar pour la femme moderne.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Boutique</h4>
+          <ul>
+            <li><a href="index.html#perruques">Perruques</a></li>
+            <li><a href="index.html#vetements">Vêtements</a></li>
+            <li><a href="index.html#bazar">Bazar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Aide</h4>
+          <ul>
+            <li><a href="contact.html">Passer commande</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Suivez-nous</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/bellabeautyshop7/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/1KW7x2CaMJ/" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://wa.me/2250707420556" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Bella Beauty Shop. Tous droits réservés.</span>
+        <span>Site vitrine</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

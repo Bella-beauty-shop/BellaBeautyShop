@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bella Beauty Shop — Perruques, vêtements & bazar pour femmes</title>
+  <meta name="description" content="Bella Beauty Shop : perruques, vêtements et articles bazar sélectionnés pour la femme moderne. Commande simple et rapide via WhatsApp." />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Bella Beauty Shop" class="brand__logo" />
+        <span class="brand__text">
+          <span class="brand__name">Bella Beauty Shop</span>
+          <span class="brand__tagline">Sentez la différence</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" data-main-nav>
+        <a href="index.html" class="is-active">Accueil</a>
+        <a href="index.html#perruques">Perruques</a>
+        <a href="index.html#vetements">Vêtements</a>
+        <a href="index.html#bazar">Bazar</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn--berry">Commander</a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div>
+          <span class="eyebrow hero__eyebrow">Bella Beauty Shop</span>
+          <h1>Perruques, prêt-à-porter &amp; trouvailles beauté, sélectionnés pour vous</h1>
+          <p class="hero__lead">
+            Une boutique pensée pour la femme moderne : perruques haut de gamme,
+            vêtements tendance et petits objets qui font la différence au quotidien.
+          </p>
+          <div class="hero__actions">
+            <a href="#catalogue" class="btn btn--gold">Découvrir la boutique</a>
+            <a href="contact.html" class="btn btn--outline">Commander via WhatsApp</a>
+          </div>
+          <div class="hero__categories">
+            <a href="index.html#perruques" class="chip">Perruques</a>
+            <a href="index.html#vetements" class="chip">Vêtements</a>
+            <a href="index.html#bazar" class="chip">Bazar</a>
+          </div>
+        </div>
+
+        <div class="hero__art">
+          <div class="hero__art-main frame frame__c2">
+            <img src="assets/products/p16.jpg" alt="Perruque ondulée ombrée, Bella Beauty Shop" />
+          </div>
+          <div class="hero__art-side frame frame__c2">
+            <img src="assets/products/p15-1.jpg" alt="Perruque bouclée naturelle" />
+          </div>
+          <div class="hero__art-side frame frame__c2">
+            <img src="assets/products/p6-1.jpg" alt="Perruque longue lisse ombrée" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="divider"><span class="divider__dot"></span></div>
+    </div>
+
+    <!-- BANDEAU CATEGORIES -->
+    <section class="category-band">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Nos univers</span>
+          <h2>Trois familles, une seule adresse</h2>
+        </div>
+
+        <div class="category-grid">
+          <a href="index.html#perruques" class="category-card frame">
+            <img src="assets/products/p7.jpg" alt="Perruque ondulée noire, catégorie Perruques" loading="lazy" />
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">Perruques</span>
+          </a>
+          <a href="index.html#vetements" class="category-card frame">
+            <img src="assets/vitrine-vetements.jpg" alt="Vêtements : vitrine en cours" loading="lazy" />
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">Vêtements</span>
+          </a>
+          <a href="index.html#bazar" class="category-card frame">
+            <img src="assets/vitrine-bazar.jpg" alt="Bazar : vitrine en cours" loading="lazy" />
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">Bazar</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOGUE -->
+    <section class="products-section" id="catalogue">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Catalogue</span>
+          <h2>Tous nos produits</h2>
+          <div class="divider divider--tight"><span class="divider__dot"></span></div>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn is-active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="perruques">Perruques</button>
+          <button class="filter-btn" data-filter="vetements">Vêtements</button>
+          <button class="filter-btn" data-filter="bazar">Bazar</button>
+        </div>
+
+        <div class="product-grid" data-product-grid></div>
+        <div class="empty-state" data-empty-state>
+          <div class="empty-state__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 3l1.9 4.3 4.7.5-3.5 3.2.9 4.6L12 13.4l-4 2.2.9-4.6L5.4 7.8l4.7-.5L12 3z"/>
+            </svg>
+          </div>
+          <h3>Cette collection arrive bientôt</h3>
+          <p>Nous préparons une belle sélection pour vous. Revenez très vite pour la découvrir !</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMESSES -->
+    <section class="promise-band">
+      <div class="container promise-grid">
+        <div class="promise-item">
+          <div class="promise-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3>Sélection soignée</h3>
+          <p>Chaque produit est choisi pour sa qualité et son style, pensé pour vous.</p>
+        </div>
+        <div class="promise-item">
+          <div class="promise-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Commande simple</h3>
+          <p>Un échange direct via WhatsApp pour finaliser votre commande, sans détour.</p>
+        </div>
+        <div class="promise-item">
+          <div class="promise-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3>Réponse rapide</h3>
+          <p>Nos conseillères reviennent vers vous rapidement pour vous accompagner.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <span class="eyebrow">Une question, une envie ?</span>
+        <h2>Écrivez-nous, on s'occupe du reste</h2>
+        <p>Décrivez-nous ce que vous cherchez, on vous guide vers le produit parfait et on finalise ensemble sur WhatsApp.</p>
+        <a href="contact.html" class="btn btn--berry">Commander via WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Bella Beauty Shop" />
+            <div>
+              <div class="footer-brand__name">Bella Beauty Shop</div>
+              <div class="footer-brand__tagline">Sentez la différence</div>
+            </div>
+          </div>
+          <p style="color:#c9bdaf; font-size:0.9rem; max-width:32ch;">
+            Perruques, vêtements et bazar pour la femme moderne.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Boutique</h4>
+          <ul>
+            <li><a href="index.html#perruques">Perruques</a></li>
+            <li><a href="index.html#vetements">Vêtements</a></li>
+            <li><a href="index.html#bazar">Bazar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Aide</h4>
+          <ul>
+            <li><a href="contact.html">Passer commande</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Suivez-nous</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/bellabeautyshop7/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/1KW7x2CaMJ/" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://wa.me/2250707420556" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Bella Beauty Shop. Tous droits réservés.</span>
+        <span>Site vitrine</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
